@@ -1,0 +1,43 @@
+{
+  "pool": "reuse-pool",
+  "jobs": [
+    {
+      "job": "job-amber",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Borrow two processor units from the pool. Storage units are not requested in this step. Retain the borrowed processor units until their specified return."
+        },
+        {
+          "id": "step-2",
+          "text": "Return both of the two processor units held by this job to the pool. No storage units are acquired or returned by this step."
+        },
+        {
+          "id": "step-3",
+          "text": "Now borrow one storage unit from the pool. The previously returned processor units stay returned; do not borrow them again."
+        },
+        {
+          "id": "step-4",
+          "text": "Return the single storage unit to the pool, leaving this job with no units held. This is the final step."
+        }
+      ]
+    },
+    {
+      "job": "job-bronze",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Borrow two processor units from the pool and retain them while proceeding to the next step. No storage units are borrowed yet."
+        },
+        {
+          "id": "step-2",
+          "text": "Retain the processor units already held and additionally borrow two storage units. There is no additional processor borrowing here."
+        },
+        {
+          "id": "step-3",
+          "text": "Return the two processor units and the two storage units to the pool. This final return leaves no units held."
+        }
+      ]
+    }
+  ]
+}

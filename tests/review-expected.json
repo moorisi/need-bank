@@ -1,0 +1,46 @@
+{
+  "jobs": [
+    {
+      "job": "job-amber",
+      "steps": [
+        {
+          "id": "step-1",
+          "operation": "UNKNOWN",
+          "units": [
+            0,
+            0
+          ]
+        },
+        {
+          "id": "step-2",
+          "operation": "RELEASE",
+          "units": [
+            2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "job": "job-bronze",
+      "steps": [
+        {
+          "id": "step-1",
+          "operation": "ACQUIRE",
+          "units": [
+            0,
+            1
+          ]
+        },
+        {
+          "id": "step-2",
+          "operation": "RELEASE",
+          "units": [
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pool": "blocked-pool",
+  "jobs": [
+    {
+      "job": "job-amber",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+        },
+        {
+          "id": "step-2",
+          "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+        }
+      ]
+    },
+    {
+      "job": "job-bronze",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+        },
+        {
+          "id": "step-2",
+          "text": "Return the single storage unit to the pool. The job ends with no units held."
+        }
+      ]
+    }
+  ]
+}

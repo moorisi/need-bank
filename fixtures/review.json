@@ -1,0 +1,31 @@
+{
+  "pool": "review-pool",
+  "jobs": [
+    {
+      "job": "job-amber",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "The current borrowing instruction is unresolved: the approved text alternately requires two or three processor units, with neither alternative superseding the other. No definite quantity is authorized; storage is not involved."
+        },
+        {
+          "id": "step-2",
+          "text": "The final return step says to return two processor units to the pool. It requests no storage units. This is a definite return instruction despite the unresolved earlier step."
+        }
+      ]
+    },
+    {
+      "job": "job-bronze",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Borrow one storage unit from the pool, with no processor borrowing, and retain it until the next step."
+        },
+        {
+          "id": "step-2",
+          "text": "Return the one storage unit held by this job to the pool. This final step leaves no units held."
+        }
+      ]
+    }
+  ]
+}

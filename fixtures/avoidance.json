@@ -1,0 +1,39 @@
+{
+  "pool": "avoidance-pool",
+  "jobs": [
+    {
+      "job": "job-amber",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Withdrawn suggestion: borrow three processor units. The operative step instead borrows two processor units from the pool, adds no storage units, and retains these borrowed units until a later return step."
+        },
+        {
+          "id": "step-2",
+          "text": "While keeping the processor units already held, additionally borrow two storage units from the pool. This step acquires no further processor units."
+        },
+        {
+          "id": "step-3",
+          "text": "Return the two processor units and the two storage units held by this job to the pool. This step acquires nothing and ends the job."
+        }
+      ]
+    },
+    {
+      "job": "job-bronze",
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Borrow two storage units from the pool and retain them for subsequent steps. Do not borrow any processor units in this step."
+        },
+        {
+          "id": "step-2",
+          "text": "Keeping the two storage units already borrowed, additionally borrow two processor units. The earlier proposal of one processor unit is withdrawn; two is the operative quantity."
+        },
+        {
+          "id": "step-3",
+          "text": "Return two processor units together with two storage units to the pool. No units remain held after this final step."
+        }
+      ]
+    }
+  ]
+}
