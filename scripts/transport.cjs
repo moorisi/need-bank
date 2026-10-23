@@ -26,7 +26,7 @@ function invoke(label,args){
   return new Promise((resolve,reject)=>{
     const child=cp.spawn(process.execPath,['--require',path.join(__dirname,'cli-json.cjs'),cli,...args],{cwd:root,windowsHide:true,env:{...process.env,NO_COLOR:'1'},stdio:['pipe','pipe','pipe']});
     child.stdin.end((process.env.NEED_PASSWORD||'')+'\n');let stdout='',stderr='',hash;
-    const timer=setTimeout(()=>{console.log('TIMEOUT',label,hash||'no hash; inspect journal before retry');child.kill();},90000);
+    const timer=setTimeout(()=>{console.log('TIMEOUT',label,hash||'no hash; inspect journal before retry');child.kill();},180000);
     child.stdout.on('data',chunk=>{
       stdout+=String(chunk);const found=stdout.match(/(?:Deployment|Write) Transaction Hash:\s*(0x[0-9a-f]{64})/i)?.[1];
       if(found&&!hash){hash=found;fs.writeFileSync(file,JSON.stringify({...initial,hash}));record(label,hash);console.log('SUBMITTED',label,hash);}

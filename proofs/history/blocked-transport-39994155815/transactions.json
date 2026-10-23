@@ -1,0 +1,7 @@
+{
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "hashes": {
+    "blocked-deployment": "0xac3ca3792c796c2831f567253e689b5836046c7605d47d616b75a97aaa90a86e",
+    "blocked-compile": "0x2dfe1f17d03399d8ff71a0a45bc495df00a3f1fa7c9a1cadc8f1c12a321f4d5a"
+  }
+}

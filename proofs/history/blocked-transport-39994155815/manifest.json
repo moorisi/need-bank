@@ -1,0 +1,20 @@
+{
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "workflow_run": 39994155815,
+  "workflow": "https://github.com/moorisi/need-bank/actions/runs/39994155815",
+  "classification": "Partial completed scenario interrupted by ambiguous CLI timeout",
+  "verified_receipts": [
+    "blocked-deployment-receipt.json",
+    "blocked-compile-receipt.json"
+  ],
+  "last_verified_state": "BLOCKED / OVER_CAPACITY; zero allocations and full free capacity",
+  "ambiguous_call": {
+    "method": "advance",
+    "args": [
+      0
+    ],
+    "sender": "0x473720fe0381bf12b4eaceb56fb7f27f45f05398",
+    "transaction": null,
+    "details": "CLI timed out at 90 seconds without reporting a hash. Broadcast may have occurred. This call was not replayed; the replacement scenario uses a fresh contract and fresh accounts."
+  }
+}
