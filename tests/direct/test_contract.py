@@ -108,6 +108,21 @@ def test_compile_cannot_reinterpret_after_progress(direct_deploy, direct_vm, dir
     assert c.get_state() == before
 
 
+def test_native_abi_address_participants(direct_deploy, direct_vm, direct_accounts, monkeypatch):
+    from gltest.direct import loader
+    original = loader._calldata_roundtrip_args
+    def cli_address_autodetection(args, kwargs):
+        from genlayer import Address
+        if 'participants' in kwargs:
+            kwargs = dict(kwargs, participants=[Address(p) for p in kwargs['participants']])
+        return original(args, kwargs)
+    monkeypatch.setattr(loader, '_calldata_roundtrip_args', cli_address_autodetection)
+    c = deploy(direct_deploy, direct_accounts)
+    assert c.get_state()['configuration']['participants'] == [address(a) for a in direct_accounts[:2]]
+    compile_pool(c, direct_vm)
+    conserved(step(c, direct_vm, direct_accounts, 0))
+
+
 @pytest.mark.parametrize('job', [-1, 2, True])
 def test_index_bounds(direct_deploy, direct_vm, direct_accounts, job):
     c = deploy(direct_deploy, direct_accounts); compile_pool(c, direct_vm)

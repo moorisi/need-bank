@@ -1,0 +1,42 @@
+{
+  "source_sha256": "7bc7a6608f4f0224b24541873a0dd7c7973d7f9720c382003ca730cc7cd3aba7",
+  "source_revision": "3bd38ae24199219cd1fc18f6f2b32ccf13081198",
+  "classification": "Three unexpected VM deployment errors and one ambiguous CLI timeout, excluded from final-source proofs",
+  "cause": "CLI encoded participant strings as native Address objects; old constructor applied a string regex before normalization.",
+  "runs": [
+    {
+      "id": "avoidance",
+      "workflow_run": 39992382314,
+      "transaction": "0xfe39711a318437069df69feac32c325f65f227021a282bfbbc35ff7cd7efc965",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "receipt": "avoidance-deployment-receipt.json"
+    },
+    {
+      "id": "review",
+      "workflow_run": 39992397837,
+      "transaction": "0x8d541114466630b61740962ce2997c3196aa74b018d684ca251f804f3caa3dc9",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "receipt": "review-deployment-receipt.json"
+    },
+    {
+      "id": "blocked",
+      "workflow_run": 39992405372,
+      "transaction": "0x6883c98b6e74716bd4d6e698eee04d2f4fdf3a3a5f8a5f67700452ef2663c095",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "receipt": "blocked-deployment-receipt.json"
+    },
+    {
+      "id": "reuse",
+      "workflow_run": 39992390072,
+      "transaction": null,
+      "receipt": null,
+      "classification": "AMBIGUOUS_CLI_TIMEOUT",
+      "sender": "0x902fd56eb3f085d576a2ceed8841cf6a57c0b95c",
+      "details": "CLI timed out after 90 seconds with no hash observed. Artifact contains no transaction journal or receipt. Broadcast may have occurred; this attempt was not replayed. Corrected proofs use fresh disposable accounts.",
+      "logs": "https://github.com/moorisi/need-bank/actions/runs/39992390072"
+    }
+  ]
+}

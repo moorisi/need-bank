@@ -241,7 +241,7 @@ class NeedBank(gl.Contract):
     ledger: str
     events: DynArray[str]
 
-    def __init__(self, repository: str, pool: str, resources: list[str], capacity: list[int], participants: list[str], jobs: list[str], steps: list[list[str]], url: str, sha256: str):
+    def __init__(self, repository: str, pool: str, resources: list[str], capacity: list[int], participants: list[Address], jobs: list[str], steps: list[list[str]], url: str, sha256: str):
         slug = r'[a-z][a-z0-9-]{2,31}'
         if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repository) or '..' in repository or not re.fullmatch(slug, pool):
             fail('[EXPECTED] Invalid pool scope')
@@ -250,7 +250,8 @@ class NeedBank(gl.Contract):
         n = len(jobs)
         if not 2 <= n <= 4 or len(set(jobs)) != n or any(not re.fullmatch(slug, x) for x in jobs) or len(participants) != n or len(steps) != n:
             fail('[EXPECTED] Invalid fixed job roster')
-        if any(not re.fullmatch(r'0x[0-9a-fA-F]{40}', p) or int(p[2:], 16) == 0 for p in participants) or len(set(p.lower() for p in participants)) != n:
+        participants = [str(p) if isinstance(p, Address) else p for p in participants]
+        if any(not isinstance(p, str) or not re.fullmatch(r'0x[0-9a-fA-F]{40}', p) or int(p[2:], 16) == 0 for p in participants) or len(set(p.lower() for p in participants)) != n:
             fail('[EXPECTED] Distinct nonzero participant addresses required')
         if any(not 2 <= len(xs) <= 6 or len(set(xs)) != len(xs) or any(not re.fullmatch(slug, x) for x in xs) for xs in steps):
             fail('[EXPECTED] Invalid ordered step roster')
