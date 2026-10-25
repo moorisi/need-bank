@@ -1,0 +1,174 @@
+{
+  "assessment": {
+    "observations": {
+      "jobs": [
+        {
+          "job": "job-amber",
+          "steps": [
+            {
+              "id": "step-1",
+              "operation": "UNKNOWN",
+              "quote": "The current borrowing instruction is unresolved: the approved text alternately requires two or three processor units, with neither alternative superseding the other. No definite quantity is authorized; storage is not involved.",
+              "units": [
+                0,
+                0
+              ]
+            },
+            {
+              "id": "step-2",
+              "operation": "RELEASE",
+              "quote": "The final return step says to return two processor units to the pool. It requests no storage units. This is a definite return instruction despite the unresolved earlier step.",
+              "units": [
+                2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "job": "job-bronze",
+          "steps": [
+            {
+              "id": "step-1",
+              "operation": "ACQUIRE",
+              "quote": "Borrow one storage unit from the pool, with no processor borrowing, and retain it until the next step.",
+              "units": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "step-2",
+              "operation": "RELEASE",
+              "quote": "Return the one storage unit held by this job to the pool. This final step leaves no units held.",
+              "units": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "source": {
+      "jobs": [
+        {
+          "job": "job-amber",
+          "steps": [
+            {
+              "id": "step-1",
+              "text": "The current borrowing instruction is unresolved: the approved text alternately requires two or three processor units, with neither alternative superseding the other. No definite quantity is authorized; storage is not involved."
+            },
+            {
+              "id": "step-2",
+              "text": "The final return step says to return two processor units to the pool. It requests no storage units. This is a definite return instruction despite the unresolved earlier step."
+            }
+          ]
+        },
+        {
+          "job": "job-bronze",
+          "steps": [
+            {
+              "id": "step-1",
+              "text": "Borrow one storage unit from the pool, with no processor borrowing, and retain it until the next step."
+            },
+            {
+              "id": "step-2",
+              "text": "Return the one storage unit held by this job to the pool. This final step leaves no units held."
+            }
+          ]
+        }
+      ],
+      "pool": "review-pool"
+    }
+  },
+  "compiled": {
+    "programs": [],
+    "reason": {
+      "kind": "UNKNOWN_STEPS",
+      "steps": [
+        [
+          "job-amber",
+          "step-1"
+        ]
+      ]
+    },
+    "status": "REVIEW"
+  },
+  "configuration": {
+    "capacity": [
+      3,
+      3
+    ],
+    "jobs": [
+      "job-amber",
+      "job-bronze"
+    ],
+    "participants": [
+      "0x17668d001d6f90f146bd83d1bbe9f6b02ffb040c",
+      "0x8ada7ff463fcd926abe4ea58b46859004971b56a"
+    ],
+    "pool": "review-pool",
+    "repository": "moorisi/need-bank",
+    "resources": [
+      "processor-units",
+      "storage-units"
+    ],
+    "sha256": "23382a3d31a34be951e2a3c9c19bb1bc072b735c1f16b4cdb6facc3fd250cef7",
+    "steps": [
+      [
+        "step-1",
+        "step-2"
+      ],
+      [
+        "step-1",
+        "step-2"
+      ]
+    ],
+    "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/review.json"
+  },
+  "events": [
+    {
+      "cursor": -1,
+      "free": [
+        3,
+        3
+      ],
+      "job": -1,
+      "kind": "COMPILE",
+      "operation": "REVIEW",
+      "safe_order": [],
+      "sender": "0xf20b5ec18d78b5df7d250bfd0610adfd67a26d1f",
+      "units": [
+        0,
+        0
+      ]
+    }
+  ],
+  "ledger": {
+    "allocations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "cursors": [
+      0,
+      0
+    ],
+    "free": [
+      3,
+      3
+    ],
+    "safe_order": [],
+    "states": [
+      "REVIEW",
+      "REVIEW"
+    ],
+    "status": "REVIEW"
+  }
+}

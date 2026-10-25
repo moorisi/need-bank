@@ -1,0 +1,35 @@
+{
+  "repository": "moorisi/need-bank",
+  "network": "studionet",
+  "chain_id": 61999,
+  "runs": [
+    {
+      "scenario": "avoidance",
+      "workflow_run": "39994131535",
+      "url": "https://github.com/moorisi/need-bank/actions/runs/39994131535",
+      "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+      "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9"
+    },
+    {
+      "scenario": "reuse",
+      "workflow_run": "39994140257",
+      "url": "https://github.com/moorisi/need-bank/actions/runs/39994140257",
+      "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+      "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9"
+    },
+    {
+      "scenario": "review",
+      "workflow_run": "39994148021",
+      "url": "https://github.com/moorisi/need-bank/actions/runs/39994148021",
+      "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+      "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9"
+    },
+    {
+      "scenario": "blocked",
+      "workflow_run": "39996798280",
+      "url": "https://github.com/moorisi/need-bank/actions/runs/39996798280",
+      "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+      "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9"
+    }
+  ]
+}

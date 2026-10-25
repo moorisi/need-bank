@@ -1,0 +1,461 @@
+{
+  "assessment": {
+    "observations": {
+      "jobs": [
+        {
+          "job": "job-amber",
+          "steps": [
+            {
+              "id": "step-1",
+              "operation": "ACQUIRE",
+              "quote": "Borrow two processor units from the pool. Storage units are not requested in this step.",
+              "units": [
+                2,
+                0
+              ]
+            },
+            {
+              "id": "step-2",
+              "operation": "RELEASE",
+              "quote": "Return both of the two processor units held by this job to the pool. No storage units are acquired or returned by this step.",
+              "units": [
+                2,
+                0
+              ]
+            },
+            {
+              "id": "step-3",
+              "operation": "ACQUIRE",
+              "quote": "Now borrow one storage unit from the pool. The previously returned processor units stay returned; do not borrow them again.",
+              "units": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "step-4",
+              "operation": "RELEASE",
+              "quote": "Return the single storage unit to the pool, leaving this job with no units held.",
+              "units": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "job": "job-bronze",
+          "steps": [
+            {
+              "id": "step-1",
+              "operation": "ACQUIRE",
+              "quote": "Borrow two processor units from the pool and retain them while proceeding to the next step. No storage units are borrowed yet.",
+              "units": [
+                2,
+                0
+              ]
+            },
+            {
+              "id": "step-2",
+              "operation": "ACQUIRE",
+              "quote": "Retain the processor units already held and additionally borrow two storage units. There is no additional processor borrowing here.",
+              "units": [
+                0,
+                2
+              ]
+            },
+            {
+              "id": "step-3",
+              "operation": "RELEASE",
+              "quote": "Return the two processor units and the two storage units to the pool. This final return leaves no units held.",
+              "units": [
+                2,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "source": {
+      "jobs": [
+        {
+          "job": "job-amber",
+          "steps": [
+            {
+              "id": "step-1",
+              "text": "Borrow two processor units from the pool. Storage units are not requested in this step. Retain the borrowed processor units until their specified return."
+            },
+            {
+              "id": "step-2",
+              "text": "Return both of the two processor units held by this job to the pool. No storage units are acquired or returned by this step."
+            },
+            {
+              "id": "step-3",
+              "text": "Now borrow one storage unit from the pool. The previously returned processor units stay returned; do not borrow them again."
+            },
+            {
+              "id": "step-4",
+              "text": "Return the single storage unit to the pool, leaving this job with no units held. This is the final step."
+            }
+          ]
+        },
+        {
+          "job": "job-bronze",
+          "steps": [
+            {
+              "id": "step-1",
+              "text": "Borrow two processor units from the pool and retain them while proceeding to the next step. No storage units are borrowed yet."
+            },
+            {
+              "id": "step-2",
+              "text": "Retain the processor units already held and additionally borrow two storage units. There is no additional processor borrowing here."
+            },
+            {
+              "id": "step-3",
+              "text": "Return the two processor units and the two storage units to the pool. This final return leaves no units held."
+            }
+          ]
+        }
+      ],
+      "pool": "reuse-pool"
+    }
+  },
+  "compiled": {
+    "programs": [
+      {
+        "holdings": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "job": "job-amber",
+        "operations": [
+          {
+            "operation": "ACQUIRE",
+            "units": [
+              2,
+              0
+            ]
+          },
+          {
+            "operation": "RELEASE",
+            "units": [
+              2,
+              0
+            ]
+          },
+          {
+            "operation": "ACQUIRE",
+            "units": [
+              0,
+              1
+            ]
+          },
+          {
+            "operation": "RELEASE",
+            "units": [
+              0,
+              1
+            ]
+          }
+        ],
+        "remaining_peaks": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "holdings": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "job": "job-bronze",
+        "operations": [
+          {
+            "operation": "ACQUIRE",
+            "units": [
+              2,
+              0
+            ]
+          },
+          {
+            "operation": "ACQUIRE",
+            "units": [
+              0,
+              2
+            ]
+          },
+          {
+            "operation": "RELEASE",
+            "units": [
+              2,
+              2
+            ]
+          }
+        ],
+        "remaining_peaks": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "reason": null,
+    "status": "ACTIVE"
+  },
+  "configuration": {
+    "capacity": [
+      2,
+      2
+    ],
+    "jobs": [
+      "job-amber",
+      "job-bronze"
+    ],
+    "participants": [
+      "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791"
+    ],
+    "pool": "reuse-pool",
+    "repository": "moorisi/need-bank",
+    "resources": [
+      "processor-units",
+      "storage-units"
+    ],
+    "sha256": "12b8d3b7a29914499d35e09c074a666b57c024ca0e0251f1b43304401173f737",
+    "steps": [
+      [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ],
+      [
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    ],
+    "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/reuse.json"
+  },
+  "events": [
+    {
+      "cursor": -1,
+      "free": [
+        2,
+        2
+      ],
+      "job": -1,
+      "kind": "COMPILE",
+      "operation": "ACTIVE",
+      "safe_order": [
+        0,
+        1
+      ],
+      "sender": "0x673a546baaaf7d98fd26fca465e760e657c1aaaa",
+      "units": [
+        0,
+        0
+      ]
+    },
+    {
+      "cursor": 1,
+      "free": [
+        0,
+        2
+      ],
+      "job": 0,
+      "kind": "ADVANCE",
+      "operation": "ACQUIRE",
+      "safe_order": [
+        0,
+        1
+      ],
+      "sender": "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "units": [
+        2,
+        0
+      ]
+    },
+    {
+      "cursor": 2,
+      "free": [
+        2,
+        2
+      ],
+      "job": 0,
+      "kind": "ADVANCE",
+      "operation": "RELEASE",
+      "safe_order": [
+        0,
+        1
+      ],
+      "sender": "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "units": [
+        2,
+        0
+      ]
+    },
+    {
+      "cursor": 3,
+      "free": [
+        2,
+        1
+      ],
+      "job": 0,
+      "kind": "ADVANCE",
+      "operation": "ACQUIRE",
+      "safe_order": [
+        0,
+        1
+      ],
+      "sender": "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "units": [
+        0,
+        1
+      ]
+    },
+    {
+      "cursor": 1,
+      "free": [
+        0,
+        1
+      ],
+      "job": 1,
+      "kind": "ADVANCE",
+      "operation": "ACQUIRE",
+      "safe_order": [
+        0,
+        1
+      ],
+      "sender": "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791",
+      "units": [
+        2,
+        0
+      ]
+    },
+    {
+      "cursor": 1,
+      "free": [
+        2,
+        1
+      ],
+      "job": 1,
+      "kind": "ABORT",
+      "operation": "RELEASE",
+      "safe_order": [
+        0
+      ],
+      "sender": "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791",
+      "units": [
+        2,
+        0
+      ]
+    },
+    {
+      "cursor": 4,
+      "free": [
+        2,
+        2
+      ],
+      "job": 0,
+      "kind": "ADVANCE",
+      "operation": "RELEASE",
+      "safe_order": [],
+      "sender": "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "units": [
+        0,
+        1
+      ]
+    }
+  ],
+  "ledger": {
+    "allocations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "cursors": [
+      4,
+      1
+    ],
+    "free": [
+      2,
+      2
+    ],
+    "safe_order": [],
+    "states": [
+      "DONE",
+      "ABORTED"
+    ],
+    "status": "COMPLETE"
+  }
+}

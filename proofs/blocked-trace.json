@@ -1,0 +1,1648 @@
+[
+  {
+    "label": "blocked-compile",
+    "caller": 2,
+    "method": "compile",
+    "args": [],
+    "transaction": "0x35f6fc0fc8da8bad154f1ecbd2b35f528349970a37a3c7d71c680b1b11ad355d",
+    "state_before": {
+      "assessment": null,
+      "compiled": null,
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "WAITING",
+          "WAITING"
+        ],
+        "status": "WAITING"
+      }
+    },
+    "state": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    }
+  },
+  {
+    "label": "blocked-reject-amber",
+    "caller": 0,
+    "method": "advance",
+    "args": [
+      0
+    ],
+    "error": "[EXPECTED] Pool not active",
+    "transaction": "0x3a314b68d14e10c8a0baec956e3418e133e804b1884bf98861e3ed7dd085e8ee",
+    "state_before": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "state": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "preview": {
+      "ledger": null,
+      "verdict": "DISABLED"
+    }
+  },
+  {
+    "label": "blocked-reject-bronze",
+    "caller": 1,
+    "method": "advance",
+    "args": [
+      1
+    ],
+    "error": "[EXPECTED] Pool not active",
+    "transaction": "0x62d785bf402a1e0b8697fb314f6661d9a7538b0204f3213cafa3db2554ea6899",
+    "state_before": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "state": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "preview": {
+      "ledger": null,
+      "verdict": "DISABLED"
+    }
+  },
+  {
+    "label": "blocked-reject-abort",
+    "caller": 0,
+    "method": "abort",
+    "args": [
+      0
+    ],
+    "error": "[EXPECTED] Pool not active",
+    "transaction": "0xd79c43b543cc5e068da21463bd67164ec4f51002e728c89752c6975b817a9fc6",
+    "state_before": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "state": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    }
+  },
+  {
+    "label": "blocked-reject-recompile",
+    "caller": 3,
+    "method": "compile",
+    "args": [],
+    "error": "[EXPECTED] Runbook already compiled",
+    "transaction": "0x90f3ff59e68aaf9630a90b5c36290ad0b3eb95cd64f691f88d7143a0481eddfd",
+    "state_before": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    },
+    "state": {
+      "assessment": {
+        "observations": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "The operative instruction definitely requires borrowing four processor units from the pool.",
+                  "units": [
+                    4,
+                    0
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return four processor units to the pool. This is the job's definite final instruction",
+                  "units": [
+                    4,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "operation": "ACQUIRE",
+                  "quote": "Borrow one storage unit from the pool. No processor units are requested",
+                  "units": [
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "id": "step-2",
+                  "operation": "RELEASE",
+                  "quote": "Return the single storage unit to the pool. The job ends with no units held.",
+                  "units": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "source": {
+          "jobs": [
+            {
+              "job": "job-amber",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "The operative instruction definitely requires borrowing four processor units from the pool. This quantity is not a draft or alternative. It requires no storage units."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return four processor units to the pool. This is the job's definite final instruction, without any storage-unit operation."
+                }
+              ]
+            },
+            {
+              "job": "job-bronze",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "text": "Borrow one storage unit from the pool. No processor units are requested, and the storage unit will be returned in the following step."
+                },
+                {
+                  "id": "step-2",
+                  "text": "Return the single storage unit to the pool. The job ends with no units held."
+                }
+              ]
+            }
+          ],
+          "pool": "blocked-pool"
+        }
+      },
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "configuration": {
+        "capacity": [
+          3,
+          3
+        ],
+        "jobs": [
+          "job-amber",
+          "job-bronze"
+        ],
+        "participants": [
+          "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+          "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+        ],
+        "pool": "blocked-pool",
+        "repository": "moorisi/need-bank",
+        "resources": [
+          "processor-units",
+          "storage-units"
+        ],
+        "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+        "steps": [
+          [
+            "step-1",
+            "step-2"
+          ],
+          [
+            "step-1",
+            "step-2"
+          ]
+        ],
+        "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+      },
+      "events": [
+        {
+          "cursor": -1,
+          "free": [
+            3,
+            3
+          ],
+          "job": -1,
+          "kind": "COMPILE",
+          "operation": "BLOCKED",
+          "safe_order": [],
+          "sender": "0x19ab0ee9b805336a656e41536104a170dc057117",
+          "units": [
+            0,
+            0
+          ]
+        }
+      ],
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      }
+    }
+  }
+]

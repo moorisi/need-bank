@@ -1,0 +1,65 @@
+{
+  "assessment": null,
+  "compiled": null,
+  "configuration": {
+    "capacity": [
+      3,
+      3
+    ],
+    "jobs": [
+      "job-amber",
+      "job-bronze"
+    ],
+    "participants": [
+      "0xdab94618d12c1e72cae52fbe90f4d4cb4ed6343e",
+      "0x7ef1a7379360a7870d2dc91b96704496d2ad6ae6"
+    ],
+    "pool": "avoidance-pool",
+    "repository": "moorisi/need-bank",
+    "resources": [
+      "processor-units",
+      "storage-units"
+    ],
+    "sha256": "9d178792724e7bef2b397c6fd3a952ca571841e0b167db880030dd71ab367d37",
+    "steps": [
+      [
+        "step-1",
+        "step-2",
+        "step-3"
+      ],
+      [
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    ],
+    "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/avoidance.json"
+  },
+  "events": [],
+  "ledger": {
+    "allocations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "cursors": [
+      0,
+      0
+    ],
+    "free": [
+      3,
+      3
+    ],
+    "safe_order": [],
+    "states": [
+      "WAITING",
+      "WAITING"
+    ],
+    "status": "WAITING"
+  }
+}

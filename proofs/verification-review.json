@@ -1,0 +1,135 @@
+{
+  "scope": "review",
+  "mode": "fresh-rpc-and-state",
+  "verified_at": "2026-10-23T17:27:29.748Z",
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "instances": [
+    {
+      "id": "review",
+      "contract": "0x379a839a04FC87AFbE21ec3475B8639125c24a87",
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "kind": "UNKNOWN_STEPS",
+          "steps": [
+            [
+              "job-amber",
+              "step-1"
+            ]
+          ]
+        },
+        "status": "REVIEW"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "REVIEW",
+          "REVIEW"
+        ],
+        "status": "REVIEW"
+      },
+      "event_count": 1
+    }
+  ],
+  "transactions": [
+    {
+      "label": "review-deployment",
+      "hash": "0x6b6d02b59cf761c64629f5915601a97eeaddd2d51e073cf7c5294eefbf6ac05b",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-compile",
+      "hash": "0x7ed933631d74b4f8d2fe5494afaf62dfb35db657982d63497eafe31d77458554",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 1,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-amber",
+      "hash": "0x1a8379068b15a4f5f3834344a8ae21132346aef5fdaa2ae488cc5289d7ec5da7",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-bronze",
+      "hash": "0x80a762e96e09b8695cdb4e4c8659c86a6733f8df34da6ded7498b5c304c750ac",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 4,
+      "disagree": 0,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-abort",
+      "hash": "0xf897750bf2e5775d90e6ca97ecd244f355b09b8250909da606e76fb61aeb86d6",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-recompile",
+      "hash": "0x4c919dbccbc693ef0cb77b191bab0af0616e0ec2b3bc6852d6e932e56e0aa530",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    }
+  ],
+  "transaction_calldata_checked": true,
+  "rejection_bytes_checked": true,
+  "live_state_match": true
+}

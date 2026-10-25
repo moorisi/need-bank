@@ -1,0 +1,195 @@
+[
+  {
+    "id": "avoidance",
+    "args": [
+      "moorisi/need-bank",
+      "avoidance-pool",
+      [
+        "processor-units",
+        "storage-units"
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        "0xdab94618d12c1e72cae52fbe90f4d4cb4ed6343e",
+        "0x7ef1a7379360a7870d2dc91b96704496d2ad6ae6"
+      ],
+      [
+        "job-amber",
+        "job-bronze"
+      ],
+      [
+        [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        [
+          "step-1",
+          "step-2",
+          "step-3"
+        ]
+      ],
+      "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/avoidance.json",
+      "9d178792724e7bef2b397c6fd3a952ca571841e0b167db880030dd71ab367d37"
+    ],
+    "contract": "0xa3f5417C9236fBb75542cD3ea992e0d3ab0C3480",
+    "deployment": "0xd5f38732dd9329890c7274139d65e8cf44a9fbcf8668f3520e61ffb652b65346",
+    "accounts": [
+      "0xdab94618d12c1e72cae52fbe90f4d4cb4ed6343e",
+      "0x7ef1a7379360a7870d2dc91b96704496d2ad6ae6",
+      "0xf55c75472091e8c152ef3de302aa20c39e15fe47",
+      "0x4b02699e0f400467d44edb25737917a56154ff0a"
+    ],
+    "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9",
+    "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+    "network": "studionet",
+    "chain_id": 61999
+  },
+  {
+    "id": "reuse",
+    "args": [
+      "moorisi/need-bank",
+      "reuse-pool",
+      [
+        "processor-units",
+        "storage-units"
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+        "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791"
+      ],
+      [
+        "job-amber",
+        "job-bronze"
+      ],
+      [
+        [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        [
+          "step-1",
+          "step-2",
+          "step-3"
+        ]
+      ],
+      "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/reuse.json",
+      "12b8d3b7a29914499d35e09c074a666b57c024ca0e0251f1b43304401173f737"
+    ],
+    "contract": "0xc0C1D539D8de291081Eb0cE2F453ac03d0f6a64E",
+    "deployment": "0x80bf021eb8350060627849ea911eb2a560bdd80c25aca00840198dfb3244e362",
+    "accounts": [
+      "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791",
+      "0x673a546baaaf7d98fd26fca465e760e657c1aaaa",
+      "0xefab16d73ea25052a1343f3128a027bb2c0d1c4c"
+    ],
+    "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9",
+    "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+    "network": "studionet",
+    "chain_id": 61999
+  },
+  {
+    "id": "review",
+    "args": [
+      "moorisi/need-bank",
+      "review-pool",
+      [
+        "processor-units",
+        "storage-units"
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        "0x17668d001d6f90f146bd83d1bbe9f6b02ffb040c",
+        "0x8ada7ff463fcd926abe4ea58b46859004971b56a"
+      ],
+      [
+        "job-amber",
+        "job-bronze"
+      ],
+      [
+        [
+          "step-1",
+          "step-2"
+        ],
+        [
+          "step-1",
+          "step-2"
+        ]
+      ],
+      "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/review.json",
+      "23382a3d31a34be951e2a3c9c19bb1bc072b735c1f16b4cdb6facc3fd250cef7"
+    ],
+    "contract": "0x379a839a04FC87AFbE21ec3475B8639125c24a87",
+    "deployment": "0x6b6d02b59cf761c64629f5915601a97eeaddd2d51e073cf7c5294eefbf6ac05b",
+    "accounts": [
+      "0x17668d001d6f90f146bd83d1bbe9f6b02ffb040c",
+      "0x8ada7ff463fcd926abe4ea58b46859004971b56a",
+      "0xf20b5ec18d78b5df7d250bfd0610adfd67a26d1f",
+      "0x1373f027003b29149c62b069587c965ebc51488d"
+    ],
+    "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9",
+    "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+    "network": "studionet",
+    "chain_id": 61999
+  },
+  {
+    "id": "blocked",
+    "args": [
+      "moorisi/need-bank",
+      "blocked-pool",
+      [
+        "processor-units",
+        "storage-units"
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+        "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+      ],
+      [
+        "job-amber",
+        "job-bronze"
+      ],
+      [
+        [
+          "step-1",
+          "step-2"
+        ],
+        [
+          "step-1",
+          "step-2"
+        ]
+      ],
+      "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json",
+      "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6"
+    ],
+    "contract": "0xEe9553AC92EA1aaBAcebdb7886Dd66622BDb4228",
+    "deployment": "0xe6e56bdce679894450b6635ceb1f1ff007ebab4483b5d110b03b2ba9c6335d55",
+    "accounts": [
+      "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+      "0xf798b8903e4732af03b413f8da0875163f7d2d72",
+      "0x19ab0ee9b805336a656e41536104a170dc057117",
+      "0x77f1306b0edf955b138fa45c681490a3d4fd4ed6"
+    ],
+    "fixture_revision": "e382a460015df470be405e617bd16666f8e97ca9",
+    "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+    "network": "studionet",
+    "chain_id": 61999
+  }
+]

@@ -1,0 +1,889 @@
+{
+  "scope": "all",
+  "mode": "fresh-rpc-and-state",
+  "verified_at": "2026-10-25T06:38:44.806Z",
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "instances": [
+    {
+      "id": "avoidance",
+      "contract": "0xa3f5417C9236fBb75542cD3ea992e0d3ab0C3480",
+      "compiled": {
+        "programs": [
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-amber",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-bronze",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        ],
+        "reason": null,
+        "status": "ACTIVE"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          3,
+          3
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "DONE",
+          "DONE"
+        ],
+        "status": "COMPLETE"
+      },
+      "event_count": 7
+    },
+    {
+      "id": "reuse",
+      "contract": "0xc0C1D539D8de291081Eb0cE2F453ac03d0f6a64E",
+      "compiled": {
+        "programs": [
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-amber",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-bronze",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        ],
+        "reason": null,
+        "status": "ACTIVE"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          4,
+          1
+        ],
+        "free": [
+          2,
+          2
+        ],
+        "safe_order": [],
+        "states": [
+          "DONE",
+          "ABORTED"
+        ],
+        "status": "COMPLETE"
+      },
+      "event_count": 7
+    },
+    {
+      "id": "review",
+      "contract": "0x379a839a04FC87AFbE21ec3475B8639125c24a87",
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "kind": "UNKNOWN_STEPS",
+          "steps": [
+            [
+              "job-amber",
+              "step-1"
+            ]
+          ]
+        },
+        "status": "REVIEW"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "REVIEW",
+          "REVIEW"
+        ],
+        "status": "REVIEW"
+      },
+      "event_count": 1
+    },
+    {
+      "id": "blocked",
+      "contract": "0xEe9553AC92EA1aaBAcebdb7886Dd66622BDb4228",
+      "compiled": {
+        "programs": [],
+        "reason": {
+          "job": "job-amber",
+          "kind": "OVER_CAPACITY",
+          "step": "step-1"
+        },
+        "status": "BLOCKED"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          0,
+          0
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "BLOCKED",
+          "BLOCKED"
+        ],
+        "status": "BLOCKED"
+      },
+      "event_count": 1
+    }
+  ],
+  "transactions": [
+    {
+      "label": "avoidance-deployment",
+      "hash": "0xd5f38732dd9329890c7274139d65e8cf44a9fbcf8668f3520e61ffb652b65346",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-before-compile",
+      "hash": "0x76ad4e0a9b7ce6d3380471a5be3abae4a0c188d55536670a00b508dd39ca72d5",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-compile",
+      "hash": "0x0bececc7e629ceccc7d16b86b6ca10350af3596a0601c05bbf99508a583c1b84",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-other-signer",
+      "hash": "0x17051ec7dc064b844c6b0ccb04fca0879a5d978564bb488c000e60701dc6b4ab",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-borrow-processor",
+      "hash": "0x1704e70b2f9a38725da0607fe4ae3ac6e385fbe8d1c8afff3b379c51e0006f93",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-free-but-unsafe",
+      "hash": "0xdc26bb3c6d58cc27c11e5db74a75a63f699393cc7e5406e8b9b0e723215ed803",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-borrow-storage",
+      "hash": "0x830ce94f86f2714ae571abfb7a02608613b2021ff925d8ae4adc6d09959f54d8",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-return",
+      "hash": "0xc91eb4f62d9c738a5877d859335a37021fe3ca586c28d507aa341ea90e68ffdf",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-borrow-storage",
+      "hash": "0x39c62624f9af0b30a6f5bc9919649d4504f52a5284d655cd1723ef3d94309934",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-borrow-processor",
+      "hash": "0x3832b28d2ddedafe8e5b6152352fe4fa6f633c5a6215bc40d1ed8da230780f97",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-return",
+      "hash": "0x01ac87bbdc8d25822173d687bcf76644712688de14163dba040ca2b2d6a715bd",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-complete",
+      "hash": "0x01e8e4ee45055def5deb42e60d2a358943d3374f0da31c2cec35c7ec6cd08850",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 4,
+      "disagree": 0,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-deployment",
+      "hash": "0x80bf021eb8350060627849ea911eb2a560bdd80c25aca00840198dfb3244e362",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-compile",
+      "hash": "0x523d52afa1fbbfe4134a8f366e6c080494ce6dcbc4631e50b4a4ef9f130f2d97",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-borrow-processor",
+      "hash": "0xfc81cc7a27970792eabfd4d71de5567783b6b2bbc07351f71df08c92f935c7ce",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-unavailable",
+      "hash": "0xb2353c2ebdedce62532232c35b6c459ebd42a6e10c4130f7c8b658fbcafdd370",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-return-processor",
+      "hash": "0x67ccfd45baeb7bde06a4a479ae15edc751365e1ca46c0b135654e98229570f6d",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-borrow-storage",
+      "hash": "0x71248de5d4554f4b9a3813fb7d337e167d2c2c3f237359b2e687213cd7d2623f",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-bronze-borrow-after-past-peak",
+      "hash": "0x84c1c1a6aab4b615dc3868ec25caf069696e27ae8a3a965c68739f3caa2d5c8b",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-other-abort",
+      "hash": "0x60072e99798446bd1dc1e82b6bb6aafa0396e9d5bd04550224f0fc72e0448061",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-bronze-abort",
+      "hash": "0x53ba08de76fe661d564acafca95e44ee35ddc5e2f0f2580f1982db69b628a418",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-return-storage",
+      "hash": "0x0f0eb4717b17ad86381daa8ba916c51be0abaf22a0eedc91d4842259188774b3",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-terminal",
+      "hash": "0x7462667561f59a80bcf9f086fdc8fba4d729b8d5415d41a9d7b0fc927ffeb95a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-deployment",
+      "hash": "0x6b6d02b59cf761c64629f5915601a97eeaddd2d51e073cf7c5294eefbf6ac05b",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-compile",
+      "hash": "0x7ed933631d74b4f8d2fe5494afaf62dfb35db657982d63497eafe31d77458554",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 1,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-amber",
+      "hash": "0x1a8379068b15a4f5f3834344a8ae21132346aef5fdaa2ae488cc5289d7ec5da7",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-bronze",
+      "hash": "0x80a762e96e09b8695cdb4e4c8659c86a6733f8df34da6ded7498b5c304c750ac",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 4,
+      "disagree": 0,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-abort",
+      "hash": "0xf897750bf2e5775d90e6ca97ecd244f355b09b8250909da606e76fb61aeb86d6",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "review-reject-recompile",
+      "hash": "0x4c919dbccbc693ef0cb77b191bab0af0616e0ec2b3bc6852d6e932e56e0aa530",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-deployment",
+      "hash": "0xe6e56bdce679894450b6635ceb1f1ff007ebab4483b5d110b03b2ba9c6335d55",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-compile",
+      "hash": "0x35f6fc0fc8da8bad154f1ecbd2b35f528349970a37a3c7d71c680b1b11ad355d",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-reject-amber",
+      "hash": "0x3a314b68d14e10c8a0baec956e3418e133e804b1884bf98861e3ed7dd085e8ee",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-reject-bronze",
+      "hash": "0x62d785bf402a1e0b8697fb314f6661d9a7538b0204f3213cafa3db2554ea6899",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-reject-abort",
+      "hash": "0xd79c43b543cc5e068da21463bd67164ec4f51002e728c89752c6975b817a9fc6",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "blocked-reject-recompile",
+      "hash": "0x90f3ff59e68aaf9630a90b5c36290ad0b3eb95cd64f691f88d7143a0481eddfd",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    }
+  ],
+  "transaction_calldata_checked": true,
+  "rejection_bytes_checked": true,
+  "live_state_match": true
+}

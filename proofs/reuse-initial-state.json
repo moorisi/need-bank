@@ -1,0 +1,66 @@
+{
+  "assessment": null,
+  "compiled": null,
+  "configuration": {
+    "capacity": [
+      2,
+      2
+    ],
+    "jobs": [
+      "job-amber",
+      "job-bronze"
+    ],
+    "participants": [
+      "0xa36bd638a8636952943f60fbd823e8c6502cc13f",
+      "0x9b6a4b114346e393846fbba7a8280fdb0e1ac791"
+    ],
+    "pool": "reuse-pool",
+    "repository": "moorisi/need-bank",
+    "resources": [
+      "processor-units",
+      "storage-units"
+    ],
+    "sha256": "12b8d3b7a29914499d35e09c074a666b57c024ca0e0251f1b43304401173f737",
+    "steps": [
+      [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4"
+      ],
+      [
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
+    ],
+    "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/reuse.json"
+  },
+  "events": [],
+  "ledger": {
+    "allocations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "cursors": [
+      0,
+      0
+    ],
+    "free": [
+      2,
+      2
+    ],
+    "safe_order": [],
+    "states": [
+      "WAITING",
+      "WAITING"
+    ],
+    "status": "WAITING"
+  }
+}

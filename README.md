@@ -19,3 +19,9 @@ node --test tests/rpc-preflight.test.cjs
 ```
 
 The runner, CLI, SDK and transitive Node tooling are pinned. No funds or private keys are stored in the repository. The Banker's safety algorithm is credited to its established literature. Reusable CLI/receipt scaffolding retains its MIT provenance.
+
+## Verified StudioNet deployment
+
+[Primary contract explorer](https://explorer-studio.genlayer.com/address/0xa3f5417C9236fBb75542cD3ea992e0d3ab0C3480) · [35 final-source onchain receipts](proofs/README.md) · [Ready submission text](docs/submission.md) · [Passing CI](https://github.com/moorisi/need-bank/actions/runs/39996788259).
+
+Validation: GenVM lint; 78 direct tests; seven transport tests. Four live suites verify signed calldata, full source, complete votes, resource conservation and full ledger/event replay. The final-source set includes 20 successful executions and 15 exact expected rejections. Historical unexpected deployment errors and an ambiguous timeout are documented separately. See [worked scenarios](docs/scenarios.md) and [architecture](docs/architecture.md).

@@ -1,0 +1,63 @@
+{
+  "assessment": null,
+  "compiled": null,
+  "configuration": {
+    "capacity": [
+      3,
+      3
+    ],
+    "jobs": [
+      "job-amber",
+      "job-bronze"
+    ],
+    "participants": [
+      "0xc34f3b1dadfd7d737d255747058d729636edb6e2",
+      "0xf798b8903e4732af03b413f8da0875163f7d2d72"
+    ],
+    "pool": "blocked-pool",
+    "repository": "moorisi/need-bank",
+    "resources": [
+      "processor-units",
+      "storage-units"
+    ],
+    "sha256": "f0fb6ea3885434c3375d75729b7b857df7b87a0515482305d93fa62660058bb6",
+    "steps": [
+      [
+        "step-1",
+        "step-2"
+      ],
+      [
+        "step-1",
+        "step-2"
+      ]
+    ],
+    "url": "https://raw.githubusercontent.com/moorisi/need-bank/e382a460015df470be405e617bd16666f8e97ca9/fixtures/blocked.json"
+  },
+  "events": [],
+  "ledger": {
+    "allocations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "cursors": [
+      0,
+      0
+    ],
+    "free": [
+      3,
+      3
+    ],
+    "safe_order": [],
+    "states": [
+      "WAITING",
+      "WAITING"
+    ],
+    "status": "WAITING"
+  }
+}

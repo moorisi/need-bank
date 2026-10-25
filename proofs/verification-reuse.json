@@ -1,0 +1,332 @@
+{
+  "scope": "reuse",
+  "mode": "fresh-rpc-and-state",
+  "verified_at": "2026-10-23T17:30:53.730Z",
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "instances": [
+    {
+      "id": "reuse",
+      "contract": "0xc0C1D539D8de291081Eb0cE2F453ac03d0f6a64E",
+      "compiled": {
+        "programs": [
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-amber",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-bronze",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        ],
+        "reason": null,
+        "status": "ACTIVE"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          4,
+          1
+        ],
+        "free": [
+          2,
+          2
+        ],
+        "safe_order": [],
+        "states": [
+          "DONE",
+          "ABORTED"
+        ],
+        "status": "COMPLETE"
+      },
+      "event_count": 7
+    }
+  ],
+  "transactions": [
+    {
+      "label": "reuse-deployment",
+      "hash": "0x80bf021eb8350060627849ea911eb2a560bdd80c25aca00840198dfb3244e362",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-compile",
+      "hash": "0x523d52afa1fbbfe4134a8f366e6c080494ce6dcbc4631e50b4a4ef9f130f2d97",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-borrow-processor",
+      "hash": "0xfc81cc7a27970792eabfd4d71de5567783b6b2bbc07351f71df08c92f935c7ce",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-unavailable",
+      "hash": "0xb2353c2ebdedce62532232c35b6c459ebd42a6e10c4130f7c8b658fbcafdd370",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-return-processor",
+      "hash": "0x67ccfd45baeb7bde06a4a479ae15edc751365e1ca46c0b135654e98229570f6d",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-borrow-storage",
+      "hash": "0x71248de5d4554f4b9a3813fb7d337e167d2c2c3f237359b2e687213cd7d2623f",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-bronze-borrow-after-past-peak",
+      "hash": "0x84c1c1a6aab4b615dc3868ec25caf069696e27ae8a3a965c68739f3caa2d5c8b",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-other-abort",
+      "hash": "0x60072e99798446bd1dc1e82b6bb6aafa0396e9d5bd04550224f0fc72e0448061",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-bronze-abort",
+      "hash": "0x53ba08de76fe661d564acafca95e44ee35ddc5e2f0f2580f1982db69b628a418",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-amber-return-storage",
+      "hash": "0x0f0eb4717b17ad86381daa8ba916c51be0abaf22a0eedc91d4842259188774b3",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "reuse-reject-terminal",
+      "hash": "0x7462667561f59a80bcf9f086fdc8fba4d729b8d5415d41a9d7b0fc927ffeb95a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    }
+  ],
+  "transaction_calldata_checked": true,
+  "rejection_bytes_checked": true,
+  "live_state_match": true
+}

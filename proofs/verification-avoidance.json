@@ -1,0 +1,330 @@
+{
+  "scope": "avoidance",
+  "mode": "fresh-rpc-and-state",
+  "verified_at": "2026-10-23T17:31:53.460Z",
+  "source_sha256": "8a9d8641f3e77e700ab648150391894e415a056a599332e3f6373e28443c7dee",
+  "instances": [
+    {
+      "id": "avoidance",
+      "contract": "0xa3f5417C9236fBb75542cD3ea992e0d3ab0C3480",
+      "compiled": {
+        "programs": [
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-amber",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "holdings": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "job": "job-bronze",
+            "operations": [
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "operation": "ACQUIRE",
+                "units": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "operation": "RELEASE",
+                "units": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "remaining_peaks": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        ],
+        "reason": null,
+        "status": "ACTIVE"
+      },
+      "ledger": {
+        "allocations": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "cursors": [
+          3,
+          3
+        ],
+        "free": [
+          3,
+          3
+        ],
+        "safe_order": [],
+        "states": [
+          "DONE",
+          "DONE"
+        ],
+        "status": "COMPLETE"
+      },
+      "event_count": 7
+    }
+  ],
+  "transactions": [
+    {
+      "label": "avoidance-deployment",
+      "hash": "0xd5f38732dd9329890c7274139d65e8cf44a9fbcf8668f3520e61ffb652b65346",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-before-compile",
+      "hash": "0x76ad4e0a9b7ce6d3380471a5be3abae4a0c188d55536670a00b508dd39ca72d5",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-compile",
+      "hash": "0x0bececc7e629ceccc7d16b86b6ca10350af3596a0601c05bbf99508a583c1b84",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-other-signer",
+      "hash": "0x17051ec7dc064b844c6b0ccb04fca0879a5d978564bb488c000e60701dc6b4ab",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-borrow-processor",
+      "hash": "0x1704e70b2f9a38725da0607fe4ae3ac6e385fbe8d1c8afff3b379c51e0006f93",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-free-but-unsafe",
+      "hash": "0xdc26bb3c6d58cc27c11e5db74a75a63f699393cc7e5406e8b9b0e723215ed803",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-borrow-storage",
+      "hash": "0x830ce94f86f2714ae571abfb7a02608613b2021ff925d8ae4adc6d09959f54d8",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-amber-return",
+      "hash": "0xc91eb4f62d9c738a5877d859335a37021fe3ca586c28d507aa341ea90e68ffdf",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-borrow-storage",
+      "hash": "0x39c62624f9af0b30a6f5bc9919649d4504f52a5284d655cd1723ef3d94309934",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 5,
+      "disagree": 0,
+      "idle": 0,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-borrow-processor",
+      "hash": "0x3832b28d2ddedafe8e5b6152352fe4fa6f633c5a6215bc40d1ed8da230780f97",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-bronze-return",
+      "hash": "0x01ac87bbdc8d25822173d687bcf76644712688de14163dba040ca2b2d6a715bd",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "result": "MAJORITY_AGREE",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    },
+    {
+      "label": "avoidance-reject-complete",
+      "hash": "0x01e8e4ee45055def5deb42e60d2a358943d3374f0da31c2cec35c7ec6cd08850",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "result": "MAJORITY_AGREE",
+      "agree": 4,
+      "disagree": 0,
+      "idle": 1,
+      "recorded_voters": 5,
+      "rotation_count": 0,
+      "round_count": "1"
+    }
+  ],
+  "transaction_calldata_checked": true,
+  "rejection_bytes_checked": true,
+  "live_state_match": true
+}

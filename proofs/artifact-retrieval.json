@@ -1,0 +1,12 @@
+{
+  "repository": "moorisi/need-bank",
+  "scenario": "blocked",
+  "proof_workflow_run": 39996798280,
+  "artifact_id": 12521126401,
+  "artifact_name": "studionet-proofs",
+  "archive_bytes": 56697,
+  "archive_sha256": "d43a605129fc47288140c9144b3118e4d44669d2310eba9e186a49f908e0eccb",
+  "read_only_export_workflow_run": 40169763266,
+  "export_revision": "4bcfb04bb7ccfdf9c1ef6b455c9257de73b6342b",
+  "method": "Reassembled numbered base64 log chunks from the public archive; verified the original ZIP SHA-256 before bounded extraction. The temporary read-only workflow submitted no contract transactions."
+}
