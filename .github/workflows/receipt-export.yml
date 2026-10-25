@@ -1,0 +1,29 @@
+name: Export verified public receipt archive
+on: workflow_dispatch
+permissions:
+  contents: read
+  actions: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve the fixed public proof archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/moorisi/need-bank/actions/artifacts/12521126401/zip > receipt-archive.zip
+      - name: Emit bounded digest-verified bytes
+        run: |
+          python - <<'PY'
+          import base64
+          import hashlib
+          from pathlib import Path
+          raw = Path('receipt-archive.zip').read_bytes()
+          assert len(raw) < 1000000
+          digest = hashlib.sha256(raw).hexdigest()
+          assert digest == 'd43a605129fc47288140c9144b3118e4d44669d2310eba9e186a49f908e0eccb'
+          encoded = base64.b64encode(raw).decode('ascii')
+          for position in range(0, len(encoded), 1200):
+              print(f'NEEDBANK_ARTIFACT_{position // 1200:04d}:' + encoded[position:position + 1200])
+          print('NEEDBANK_ARTIFACT_SHA256:' + digest)
+          PY
